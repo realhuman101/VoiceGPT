@@ -10,3 +10,5 @@ while True:
 
 	for chunk in client.send_message("chinchilla", message): # 'chinchilla' == ChatGPT
 		print(chunk["text_new"], end="")
+	
+	print("\n" + "="*10)
