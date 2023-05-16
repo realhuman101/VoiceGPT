@@ -1,8 +1,6 @@
 # HAL
 
-Sphinx + ChatGPT
-
-> **NOTE:** Will replace with `Whisper` for better accuracy
+Whisper + ChatGPT
 
 ## Installation
 
