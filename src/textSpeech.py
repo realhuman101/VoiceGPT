@@ -1,18 +1,23 @@
-import whisper
 import speech_recognition as sr
 
 # model = whisper.load_model("base.en")
 
-def listen() -> None:
+r = sr.Recognizer()
+
+def listen() -> str:
 	while True: # Understandable text loop
-		r = sr.Recognizer()
 		with sr.Microphone() as source:
 			print("Say command")
 			audio = r.listen(source)
 
+		print('audio finished recording')
+
 		try:
-			return r.recognize_whisper(audio, language="english")
+			thi = r.recognize_sphinx(audio)
+			print("THING:", thi)
+			print(type(thi))
+			return thi
 		except sr.UnknownValueError:
-			print("Whisper could not understand audio, please try again")
+			print("Sphinx could not understand audio, please try again")
 		except sr.RequestError as e:
-			Exception("Could not request results from Whisper, Error: \n", e)
+			Exception("Could not request results from Sphinx, Error: \n", e)
