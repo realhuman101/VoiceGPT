@@ -10,13 +10,8 @@ def listen() -> str:
 			print("Say command")
 			audio = r.listen(source)
 
-		print('audio finished recording')
-
 		try:
-			thi = r.recognize_sphinx(audio)
-			print("THING:", thi)
-			print(type(thi))
-			return thi
+			return r.recognize_sphinx(audio)
 		except sr.UnknownValueError:
 			print("Sphinx could not understand audio, please try again")
 		except sr.RequestError as e:

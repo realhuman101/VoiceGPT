@@ -7,8 +7,6 @@ client = poe.Client(os.environ['POE_TOKEN'])
 
 while True:
 	message = textSpeech.listen()
-	print('RECIEVED')
-	print(message)
 
-	for chunk in client.send_message("chinchilla", message):
+	for chunk in client.send_message("chinchilla", message): # 'chinchilla' == ChatGPT
 		print(chunk["text_new"], end="")
