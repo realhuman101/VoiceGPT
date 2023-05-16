@@ -2,6 +2,8 @@
 
 Sphinx + ChatGPT
 
+> **NOTE:** Will replace with `Whisper` for better accuracy
+
 ## Installation
 
 ```bash
