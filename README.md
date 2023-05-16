@@ -1,0 +1,2 @@
+# HAL
+ Whisper + ChatGPT
