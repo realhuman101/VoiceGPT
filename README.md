@@ -2,6 +2,8 @@
 
 Whisper + ChatGPT
 
+Uses Poe.com (unofficial API) for ChatGPT to avoid OpenAI API requirements
+
 ## Installation
 
 ```bash
