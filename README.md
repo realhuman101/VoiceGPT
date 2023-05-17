@@ -1,4 +1,4 @@
-# HAL
+# VoiceGPT
 
 Whisper + ChatGPT
 
